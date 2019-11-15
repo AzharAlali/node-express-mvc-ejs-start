@@ -12,11 +12,11 @@ const router = express.Router()
 
 // Manage top-level request first
 router.get('/', (req, res, next) => {
-  res.render('index', { title: 'MVC' })
+  res.render('index.ejs', { title: 'MVC' })
 })
 
 router.get('/index', (req, res, next) => {
-  res.render('index', { title: 'MVC' })
+  res.render('index.ejs', { title: 'MVC' })
 })
 
 // Route requests that start with an expression to a controller
